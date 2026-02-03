@@ -1,57 +1,53 @@
+/* 全体背景とフォント */
 body {
+  font-family: 'Arial', sans-serif;
   margin: 0;
-  font-family: "Helvetica", "Arial", sans-serif;
-  line-height: 1.8;
+  padding: 0;
+  background: linear-gradient(to bottom right, #00bfff, #7fff00, #ff4c4c, #ffffff);
   color: #333;
 }
 
-.header {
-  background: #111;
-  color: #fff;
+/* ヘッダー */
+header {
+  background-color: rgba(0, 191, 255, 0.8); /* 青っぽく透明感 */
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* ボタン */
+.btn {
+  display: inline-block;
+  padding: 12px 25px;
+  margin: 15px 0;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, #ff4c4c, #7fff00, #00bfff);
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* セクション */
+section {
   padding: 60px 20px;
   text-align: center;
 }
 
-.section {
-  max-width: 800px;
-  margin: 60px auto;
-  padding: 0 20px;
+/* 見出し */
+h1, h2, h3 {
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
 }
 
-.section h2 {
-  border-bottom: 2px solid #111;
-  padding-bottom: 10px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-}
-
-.contact {
-  text-align: center;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 15px 30px;
-  background: #111;
-  color: #fff;
-  text-decoration: none;
-}
-
-.btn:hover {
-  opacity: 0.8;
-}
-
-.footer {
+/* フッター */
+footer {
+  background-color: rgba(255, 76, 76, 0.8); /* 赤っぽく透明感 */
+  color: white;
   text-align: center;
   padding: 20px;
-  background: #f5f5f5;
-  font-size: 14px;
 }
